@@ -110,8 +110,8 @@ const WalletScreen: FunctionComponent = observer(() => {
     handleSearchPhraseChange((prev) => ({
       ...prev,
       name: searchPhrase || undefined,
-      searchType: undefined,
       searchText: undefined,
+      searchType: undefined,
     }));
   }, [handleSearchPhraseChange, searchPhrase]);
 
