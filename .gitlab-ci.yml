@@ -282,7 +282,7 @@ e2e:
 
 
 dtrack:android:upload-bom:
-  image: registry.gitlab.procivis.ch/procivis/one/one-operations/core-base:1.76.0-0.1
+  image: registry.gitlab.procivis.ch/procivis/one/one-operations/core-base:1.80.0-0.3
   variables:
     DEPENDENCY_TRACK_PROJECT_NAME: "ONE-Wallet-Android"
     SBOM_FILE_PATH: "android-bom.json"
