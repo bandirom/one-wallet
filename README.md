@@ -7,22 +7,6 @@
 
 # Installation
 
-### Prerequisites
-
-For using private Procivis registry you need to create [Personal Access token](https://gitlab.procivis.ch/-/profile/personal_access_tokens)
-with `read_api` permissions
-
-- Edit (or create) file `~/.yarnrc.yml` (home directory) with:
-
-```yaml
-npmScopes:
-  procivis:
-    npmRegistryServer: 'https://gitlab.procivis.ch/api/v4/packages/npm/'
-    npmAuthToken: <YOUR_PERSONAL_TOKEN>
-```
-
-# App Flavors
-
 ## Building
 
 Each flavor has a separate configuration script defined in `package.json` file, named `rnuc:{flavor}`.
@@ -67,6 +51,8 @@ Round icon under `android/src/main/res/minimap-{screen-size}/ic_launcher_{CONFIG
 
 Splashscreen image is added in assets folder under `Splashscreen.{CONFIG_NAME}` image set, and in addition there is a separate Storyboard named `LaunchScreen.{CONFIG_NAME}.storyboard` for each flavor.
 Icons are in asstes folder under `AppIcon.{CONFIG_NAME}` image set.
+
+--- 
 
 ## Detox E2E
 
@@ -115,9 +101,16 @@ Source:
 
 Installation:
 
+- Install 
 ```shell
 npm install -g @cyclonedx/cdxgen
 ```
+
+- Install blint (python) for generate `android` SBOM
+```shell
+pip install blint
+```
+
 
 - Prepare env
 
