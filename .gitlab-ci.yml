@@ -2,7 +2,6 @@ image: node:18.16.0-alpine
 
 include:
   - project: "procivis/one/one-operations"
-    ref: "one-3417-github-jobs-for-gitlab"
     file:
       - "gitlab/github.gitlab-ci.yml"
 
@@ -411,7 +410,6 @@ github:push:
 
 github:release:
   variables:
-    DRAFT: true
     FILES_TO_ATTACH: >-
       rn-bom.xml
       android-bom.json
